@@ -1,0 +1,36 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090a0a"/>
+      <stop offset="100%" stop-color="#11120f"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="360" rx="26" fill="url(#bg)"/>
+  <rect x="22" y="22" width="1156" height="316" rx="22" fill="none" stroke="#c6ff00" stroke-width="2" opacity="0.85"/>
+  <text x="600" y="63" text-anchor="middle" font-family="Inter, Segoe UI, Arial" font-size="30" font-weight="800" fill="#c6ff00">HIGHRES_IMU TELEMETRY PIPELINE</text>
+  <text x="600" y="95" text-anchor="middle" font-family="Inter, Segoe UI, Arial" font-size="16" fill="#d8d8d8">MPU9265 sensor readings packed into MAVLink and viewed inside Mission Planner</text>
+  <g font-family="Inter, Segoe UI, Arial" font-size="17" font-weight="700">
+    <rect x="70" y="145" width="195" height="92" rx="18" fill="#161711" stroke="#c6ff00"/>
+    <text x="167" y="181" text-anchor="middle" fill="#c6ff00">MPU9265</text>
+    <text x="167" y="210" text-anchor="middle" fill="#e7e7e7" font-size="13" font-weight="500">Accel + Gyro over I²C</text>
+    <path d="M285 191 H395" stroke="#ffb000" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+    <polygon points="395,191 379,181 379,201" fill="#ffb000"/>
+    <rect x="415" y="145" width="195" height="92" rx="18" fill="#161711" stroke="#ffb000"/>
+    <text x="512" y="181" text-anchor="middle" fill="#ffb000">Arduino Mega</text>
+    <text x="512" y="210" text-anchor="middle" fill="#e7e7e7" font-size="13" font-weight="500">HIGHRES_IMU packer</text>
+    <path d="M630 191 H740" stroke="#c6ff00" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+    <polygon points="740,191 724,181 724,201" fill="#c6ff00"/>
+    <rect x="760" y="145" width="195" height="92" rx="18" fill="#161711" stroke="#c6ff00"/>
+    <text x="857" y="181" text-anchor="middle" fill="#c6ff00">Pixhawk Orange</text>
+    <text x="857" y="210" text-anchor="middle" fill="#e7e7e7" font-size="13" font-weight="500">TELEM2 / MAVLink</text>
+    <path d="M975 191 H1080" stroke="#ffb000" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+    <polygon points="1080,191 1064,181 1064,201" fill="#ffb000"/>
+    <rect x="980" y="260" width="160" height="50" rx="14" fill="#161711" stroke="#ffb000"/>
+    <text x="1060" y="292" text-anchor="middle" fill="#ffb000" font-size="16">Mission Planner</text>
+  </g>
+  <text x="600" y="302" text-anchor="middle" font-family="Inter, Segoe UI, Arial" font-size="15" fill="#d0d0d0">Serial1 @ 57600 baud • HIGHRES_IMU #105 • 10 Hz stream • Mavlink Inspector view</text>
+</svg>
