@@ -1,4 +1,4 @@
-# Arduino Mega → Pixhawk HIGHRES_IMU Bridge
+# Arduino Mega → Pixhawk Orange Cube Plus HIGHRES_IMU Bridge
 
 <p align="center">
   <img src="assets/highres-imu-pipeline.svg" alt="HIGHRES_IMU telemetry pipeline" width="100%" />
