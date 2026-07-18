@@ -113,32 +113,6 @@ Mission Planner / Mavlink Inspector
 
 ---
 
-## Repository Structure
-
-```text
-ArduinoMega-Pixhawk-HIGHRES-IMU-Bridge/
-│
-├── README.md
-├── HIGHRES_IMU_Communication_Report.md
-├── STEP_BY_STEP_SETUP.md
-├── .gitignore
-│
-├── src/
-│   ├── Arduino_Mega_HIGHRES_IMU_Simulator.ino
-│   └── Arduino_Mega_MPU9265_HIGHRES_IMU_Bridge.ino
-│
-├── assets/
-│   ├── highres-imu-pipeline.svg
-│   ├── mission-planner-highres-imu-run.gif
-│   ├── mission-planner-highres-imu-session.png
-│   └── mission-planner-highres-imu-session-small.png
-│
-└── examples/
-    └── mission_planner_run_notes.md
-```
-
----
-
 ## Arduino Sketches
 
 ### 1. Simulated HIGHRES_IMU Transmitter
@@ -185,19 +159,3 @@ HIGHRES_IMU (#105)
 
 ---
 
-## Future Upgrades
-
-- Add MPU9265 magnetometer support.
-- Add external barometer/temperature integration.
-- Add configurable message rate.
-- Add SD-card logging for outgoing MAVLink frames.
-- Compare Arduino-sent IMU values against Pixhawk onboard IMU values.
-- Add a Python MAVLink listener for PC-side logging.
-
----
-
-## Tech Stack
-
-```text
-Arduino Mega • MPU9265 • Pixhawk Orange Cube Plus • MAVLink • Mission Planner • Embedded C/C++ • UART • I²C
-```
